@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RandomColorization" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWM-YG-rxV">
+                                <rect key="frame" x="113.5" y="234" width="148" height="199"/>
+                                <state key="normal" image="music play"/>
+                                <connections>
+                                    <action selector="playMusicButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Pd-10-0Gw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome To Club YSF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6f-kX-WTA">
+                                <rect key="frame" x="32" y="158" width="310" height="44.5"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="32"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIC-oc-sb0">
+                                <rect key="frame" x="116" y="468" width="143" height="34.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="changeMusicButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MYp-wm-rNo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1290857195854187" green="0.0" blue="0.44728690385818481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dIC-oc-sb0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="61Y-ff-LvK"/>
+                            <constraint firstItem="dIC-oc-sb0" firstAttribute="top" secondItem="kWM-YG-rxV" secondAttribute="bottom" constant="46.5" id="COO-YI-D8x"/>
+                            <constraint firstItem="kWM-YG-rxV" firstAttribute="top" secondItem="J6f-kX-WTA" secondAttribute="bottom" constant="31.5" id="E5T-Ez-qlj"/>
+                            <constraint firstItem="kWM-YG-rxV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qjo-c0-zu6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="J6f-kX-WTA" secondAttribute="trailing" constant="17" id="a43-Fc-f49"/>
+                            <constraint firstItem="J6f-kX-WTA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="aSQ-zW-Fvw"/>
+                            <constraint firstItem="J6f-kX-WTA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="158" id="my1-nO-5Do"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dIC-oc-sb0" secondAttribute="trailing" constant="100" id="nOP-EW-2W5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dIC-oc-sb0" secondAttribute="bottom" constant="153" id="nbu-9e-wwB"/>
+                            <constraint firstItem="kWM-YG-rxV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vXc-Q9-QXF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28" y="-34.632683658170919"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="music play" width="148" height="148"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
